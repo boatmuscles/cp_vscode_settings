@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++ build active file",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-std=gnu++17",//c++17の機能を有効にし（std=c++17）、更にGNU拡張（？）を有効にする（std=gnu++17）
+                "-g",//行番号などの情報を渡し、コンパイル・実行時エラーの際に表示させる
+                "-O0",//最適化をしない（デバッグ機能を使う際は最適化をしない方が有利）
+				"-I/usr/lib/boost/",//boostを置いてあるパス
+                "-I/home/boatmuscles/atcoder-workspace/",//自分がダウンロードしたAtCoder Libraryのatcoderフォルダのパス
+				"-Wsign-compare",//符号付き整数と符号無し整数を比較する場合に警告
+				"-Wparentheses",//代入式の値を真偽値として使っている場合（e.g. if(x=0)）に警告
+				"-Wuninitialized",//初期化していない変数を式の中で使うと警告
+				"-fsanitize=address,undefined",//addressは領域外参照などを、undefinedは整数型のオーバーフローや0除算などの未定義動作を、それぞれ実行時に検出し報告
+				"-fno-omit-frame-pointer",//-fsanitize=addressに付けるといいやつ
+				"-fno-sanitize-recover",//sanitizeの項目に引っかかったら即座にプログラムを終了させる
+				"${file}",//パスを含めたファイル名
+				"-o",//作成した実行ファイルに以下の名前を付ける
+				"${fileDirname}/a.out"//ファイルと同じディレクトリにa.outという名前で実行ファイルを作成
+			],
+			"problemMatcher": [
+				"$gcc"
+			],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+		}
+	]
+}

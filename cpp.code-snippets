@@ -1,0 +1,535 @@
+{
+	// Place your atcoder-workspace workspace snippets here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"scanf_1":{
+		"scope": "cpp",
+		"prefix": "sc1",
+		"body": [
+			"$1 $2;","scanf(\"%$3\", &$2);","$0"
+		],
+		"description": "１つの受け取り"
+	},
+
+	"scanf_2":{
+		"scope": "cpp",
+		"prefix": "sc2",
+		"body": [
+			"$1 $2, $3;","scanf(\"%$4 %$4\", &$2, &$3);","$0"
+		],
+		"description": "２つの受け取り"
+	},
+
+	"scanf_3":{
+		"scope": "cpp",
+		"prefix": "sc3",
+		"body": [
+			"$1 $2, $3, $4;","scanf(\"%$5 %$5 %$5\", &$2, &$3, &$4);","$0"
+		],
+		"description": "３つの受け取り"
+	},
+
+	"scanf_4":{
+		"scope": "cpp",
+		"prefix": "sc4",
+		"body": [
+			"$1 $2, $3, $4, $5;","scanf(\"%$6 %$6 %$6 %$6\", &$2, &$3, &$4, &$5);","$0"
+		],
+		"description": "４つの受け取り"
+	},
+
+	"scanf_5":{
+		"scope": "cpp",
+		"prefix": "sc5",
+		"body": [
+			"$1 $2, $3, $4, $5, $6;","scanf(\"%$7 %$7 %$7 %$7 %$7\", &$2, &$3, &$4, &$5, &$6);","$0"
+		],
+		"description": "５つの受け取り"
+	},
+
+	"scanf_6":{
+		"scope": "cpp",
+		"prefix": "sc6",
+		"body": [
+			"$1 $2, $3, $4, $5, $6, $7;","scanf(\"%$8 %$8 %$8 %$8 %$8 %$8\", &$2, &$3, &$4, &$5, &$6, &$7);","$0"
+		],
+		"description": "６つの受け取り"
+	},
+
+	"scanf_7":{
+		"scope": "cpp",
+		"prefix": "sc7",
+		"body": [
+			"$1 $2, $3, $4, $5, $6, $7, $8;","scanf(\"%$9 %$9 %$9 %$9 %$9 %$9 %$9\", &$2, &$3, &$4, &$5, &$6, &$7, &$8);","$0"
+		],
+		"description": "７つの受け取り"
+	},
+
+	"scanf_1_配列":{
+		"scope": "cpp",
+		"prefix": "sca1",
+		"body": [
+			"$1 $2[$3];","for(int i = 0; i < $3; ++i) scanf(\"%$4\", $2 + i);","$0"
+		],
+		"description": "配列１つの受け取り"
+	},
+
+	"scanf_2_arrays":{
+		"scope": "cpp",
+		"prefix": "sca2",
+		"body": [
+			"$1 $2[$4], $3[$4];","for(int i = 0; i < $4; ++i) scanf(\"%$5 %$5\", $2 + i, $3 + i);","$0"
+		],
+		"description": "配列２つの受け取り"
+	},
+
+	"scanf_3_arrays":{
+		"scope": "cpp",
+		"prefix": "sca3",
+		"body": [
+			"$1 $2[$5], $3[$5], $4[$5];","for(int i = 0; i < $5; ++i) scanf(\"%$6 %$6 %$6\", $2 + i, $3 + i, $4 + i);","$0"
+		],
+		"description": "配列３つの受け取り"
+	},
+
+	"scanf_4_arrays":{
+		"scope": "cpp",
+		"prefix": "sca4",
+		"body": [
+			"$1 $2[$6], $3[$6], $4[$6], $5[$6];","for(int i = 0; i < $6; ++i) scanf(\"%$7 %$7 %$7 %$7\", $2 + i, $3 + i, $4 + i, $5 + i);","$0"
+		],
+		"description": "配列４つの受け取り"
+	},
+
+	"scanf_5_arrays":{
+		"scope": "cpp",
+		"prefix": "sca5",
+		"body": [
+			"$1 $2[$7], $3[$7], $4[$7], $5[$7], $6[$7];","for(int i = 0; i < $7; ++i) scanf(\"%$8 %$8 %$8 %$8 %$8\", $2 + i, $3 + i, $4 + i, $5 + i, $6 + i);","$0"
+		],
+		"description": "配列５つの受け取り"
+	},
+	
+	"scanf_6_arrays":{
+		"scope": "cpp",
+		"prefix": "sca6",
+		"body": [
+			"$1 $2[$8], $3[$8], $4[$8], $5[$8], $6[$8], $7[$8];","for(int i = 0; i < $8; ++i) scanf(\"%$9 %$9 %$9 %$9 %$9 %$9\", $2 + i, $3 + i, $4 + i, $5 + i, $6 + i, $7 + i);","$0"
+		],
+		"description": "配列６つの受け取り"
+	},
+
+	"scanf_1_vector":{
+		"scope": "cpp",
+		"prefix": "scv1",
+		"body": [
+			"vector<$1> $2($3);","for($4 i = 0; i < $3; ++i) scanf(\"%$5\", &$2[i]);","$0"
+		],
+		"description": "vector１つの受け取り"
+	},
+
+	"scanf_2_vectors":{
+		"scope": "cpp",
+		"prefix": "scv2",
+		"body": [
+			"vector<$1> $2($4), $3($4);","for($5 i = 0; i < $4; ++i) scanf(\"%$6 %$6\", &$2[i], &$3[i]);","$0"
+		],
+		"description": "vector２つの受け取り"
+	},
+
+	"scanf_3_vectors":{
+		"scope": "cpp",
+		"prefix": "scv3",
+		"body": [
+			"vector<$1> $2($5), $3($5), $4($5);","for($6 i = 0; i < $5; ++i) scanf(\"%$7 %$7 %$7\", &$2[i], &$3[i], &$4[i]);","$0"
+		],
+		"description": "vector３つの受け取り"
+	},
+
+	"scanf_4_vectors":{
+		"scope": "cpp",
+		"prefix": "scv4",
+		"body": [
+			"vector<$1> $2($6), $3($6), $4($6), $5($6);","for($7 i = 0; i < $6; ++i) scanf(\"%$8 %$8 %$8 %$8\", &$2[i], &$3[i], &$4[i], &$5[i]);","$0"
+		],
+		"description": "vector４つの受け取り"
+	},
+
+	"scanf_5_vectors":{
+		"scope": "cpp",
+		"prefix": "scv5",
+		"body": [
+			"vector<$1> $2($7), $3($7), $4($7), $5($7), $6($7);","for($8 i = 0; i < $7; ++i) scanf(\"%$9 %$9 %$9 %$9 %$9\", &$2[i], &$3[i], &$4[i], &$5[i], &$6[i]);","$0"
+		],
+		"description": "vector５つの受け取り"
+	},
+	
+	"scanf_6_vectors":{
+		"scope": "cpp",
+		"prefix": "scv6",
+		"body": [
+			"vector<$1> $2($8), $3($8), $4($8), $5($8), $6($8), $7($8);","for($9 i = 0; i < $8; ++i) scanf(\"%$10 %$10 %$10 %$10 %$10 %$10\", &$2[i], &$3[i], &$4[i], &$5[i], &$6[i], &$7[i]);","$0"
+		],
+		"description": "vector６つの受け取り"
+	},
+
+	"double_nested_vector":{
+		"scope": "cpp",
+		"prefix": "anv2",
+		"body": [
+			"vector<vector<$1> > $2($3, vector<$1>($4));","$0"
+		],
+		"description": "二次元vectorの宣言"
+	},
+
+	"triple_nested_vector":{
+		"scope": "cpp",
+		"prefix": "anv3",
+		"body":[
+			"vector<vector<vector<$1> > > $2($3, vector<vector<$1> >($4, vector<$1>($5)));","$0"
+		],
+		"description": "三次元vectorの宣言"
+	},
+
+	"quadruple_nested_vector":{
+		"scope": "cpp",
+		"prefix": "anv4",
+		"body":[
+			"vector<vector<vector<vector<$1> > > > $2($3, vector<vector<vector<$1> > >($4, vector<vector<$1> >($5, vector<$1>($6))));","$0"
+		],
+		"description": "四次元vectorの宣言"
+	},
+
+	"all_range":{
+		"scope": "cpp",
+		"prefix": "ALL",
+		"body": "$1.begin(), $1.end()$0",
+		"description": "コンテナの全ての範囲"
+	},
+	
+	"cpp basic": {
+		"scope": "cpp",
+		"prefix": "basic",
+		"body":[
+			"#include<cstdio>",
+			"#include<cassert>",
+			"#include<vector>",
+			"#include<iostream>",
+			"#include<string>",
+			"#include<map>",
+			"#include<set>",
+			"#include<stack>",
+			"#include<queue>",
+			"#include<functional>",
+			"#include<utility>",
+			"#include<cstring>",
+			"#include<numeric>",
+			"#include<algorithm>",
+			"#include<atcoder/math>",
+			"#include<atcoder/modint>",
+			"//#include<ext/pb_ds/assoc_container.hpp>",
+			"//#include<ext/pb_ds/tree_policy.hpp>",
+			"//using namespace __gnu_pbds;",
+			"using namespace std;",
+			"using namespace atcoder;",
+			"using ll = long long;",
+			"using ull = unsigned long long;",
+			"using Mint = modint998244353;",
+			"using mint = modint;",
+			"#define rep(i, n) for (int i = 0; i < (int)(n); ++i)",
+			"#define rrep(i, n) for (int i = (int)(n)-1; i >= 0; --i)",
+			"#define rep2(i, a, b) for (int i = (int)a; i < (int)(b); ++i)",
+			"#define rrep2(i, a, b) for (int i = (int)(b)-1; i >= (int)(a); --i)",
+			"template<class T> inline bool chmax(T& a, T b) { if (a < b) { a = b; return 1; } return 0; }",
+			"template<class T> inline bool chmin(T& a, T b) { if (a > b) { a = b; return 1; } return 0; }",
+			"constexpr int dx[] = {-1,0,1,0};",
+			"constexpr int dy[] = {0,-1,0,1};",
+			"constexpr int MAX_N = 100000;",
+			"//ダイクストラ法：makedijkstra",
+			"//エラトステネスの篩：makesieve",
+			"//テストケースが複数の場合：multest",
+			"",
+			"int main(){",
+			"\t//cin.tie(nullptr);",
+			"\t//std::ios_base::sync_with_stdio(false);",
+			"\t$0",
+			"\treturn 0;",
+			"}"
+		]
+	},
+	
+	"scanf_adjacent_matrix_of_no_weight_graph": {
+		"scope": "cpp",
+		"prefix": "scadj",
+		"body":[
+			"vector<int> adj[$1];",
+			"for(int i = $2; i < $3; ++i){",
+			"\tint tmp1, tmp2;",
+			"\tscanf(\"%d %d\", &tmp1, &tmp2);",
+			"\t--tmp1;--tmp2;",
+			"\tadj[tmp1].push_back(tmp2);",
+			"\tadj[tmp2].push_back(tmp1);",
+			"}",
+			"$0"
+		]
+	},
+	
+	"Eratosthenes' sieve constexpr version":{
+		"scope": "cpp",
+		"prefix": "makeconstsieve",
+		"body":[
+			"template<size_t max_N, size_t prime_size>",
+			"struct Prime{",
+				"\tint_fast32_t sieve[max_N];",
+				"\tmemset(sieve, 0, sizeof sieve);",
+				"\tint_fast32_t prime[prime_size];",
+				"\tsize_t counter = 0;",
+				"\tconstexpr Prime() : sieve(), prime() {",
+					"\t\tint_fast32_t i;",
+					"\t\tfor(i = 4; i <= max_N; i+=2)",
+						"\t\t\tsieve[i] = 2;",
+					"\t\tfor(i = 3; i*i <= max_N; ++i){",
+						"\t\tif((sieve[i])){",
+							"\t\t\tprime[counter++] = i;",
+							"\t\t\tif(counter > prime_size)break;",
+						"\t\t}",
+						"\t\tfor(int_fast32_t j = i*i; j <= max_N; j += i<<1)",
+							"\t\t\tsieve[j] = i;",
+					"\t\t}",
+					"\t\tfor (; i <= max_N; i += 2){",
+						"\t\t\tif((sieve[i])) prime[counter++] = i;",
+					"\t\t}",
+				"\t}",
+			"};",
+			"\nconstexpr auto p = Prime<$1, 9592$2>();\n$0",
+		]
+	},
+	
+	"Eratosthenes' sieve": {
+		"scope": "cpp",
+		"prefix": "makesieve",
+		"body":[
+			"#include<ext/pb_ds/assoc_container.hpp>",
+			"#include<ext/pb_ds/tree_policy.hpp>",
+			"using namespace __gnu_pbds;",
+			"int prime_divisor[MAX_N+1];//prime_divisor[i]はiを割り切る素数の１つ\n",
+			"vector<int> primes = {2};",
+			"{",
+				"\tfor (int i = 4; i <= MAX_N; i += 2){",
+					"\t\tprime_divisor[i] = 2;",
+				"\t}",
+        		"\tint _i = 3;",
+        		"\tfor (int twoi; _i*_i <= MAX_N; _i += 2){",
+					"\t\tif(!prime_divisor[_i]){",
+						"\t\t\tprimes.push_back(_i);",
+						"\t\t\ttwoi = _i<<1;",
+						"\t\t\tfor (int j = _i*_i; j <= MAX_N; j += twoi){",
+							"\t\t\t\tprime_divisor[j] = _i;",
+						"\t\t\t}",
+					"\t\t}",
+				"\t}",
+				"\tfor (; _i <= MAX_N; _i += 2) if(!prime_divisor[_i]) primes.push_back(_i);",
+				"\tgp_hash_table<int, int> prime_factorization;//注目している数を素因数分解したときの<素因数, 割り切る回数>",
+				"\tint n, n_factor = 1, prime_factor;",
+				"\twhile(prime_factor = prime_divisor[n]){",
+					"\t\tprime_factorization[prime_factor]++;",
+					"\t\tn /= prime_factor;",
+					"\t\t//割り切る回数は不要で、素因数の種類だけ知りたい場合",
+					"\t\t//while(!(n % prime_factor)) n /= prime_factor;",
+				"\t}",
+				"\tif(n > 1) prime_factorization[n]++;//nも素数",
+				"\tfor(auto i : prime_factorization) n_factor *= i.second + 1;",
+			"}"
+		],
+	},
+
+	"Dijkstra's algorithm":{
+		"scope": "cpp",
+		"prefix": "makedijkstra",
+		"body":[
+		"void Dijkstra(int n_v, vector<pair<int, int> > Adjacency_list[], int v_start, ll Distance[]){",
+			"\tbool has_been_added[n_v];",
+			"\tmemset(has_been_added,0,sizeof has_been_added);",
+			"\tfill(Distance, Distance + n_v, INF);",
+			"\tDistance[v_start] = 0;",
+			"\tpriority_queue<pair<ll, int>, vector<pair<ll, int> >, greater<pair<ll, int> > > PQ;",
+			"\tPQ.emplace(0, v_start);",
+			"\twhile(!PQ.empty()){",
+				"\t\tpair<ll, int> f = PQ.top(); PQ.pop();",
+				"\t\tint u = f.second;",
+				"\t\thas_been_added[u] = true;",
+				"\t\tif(Distance[u] < f.first) continue;",
+				"\t\tfor(pair<int, int> it : Adjacency_list[u]){",
+					"\t\t\tint v = it.first;",
+					"\t\t\tif(!has_been_added[v] && chmin(Distance[v], Distance[u] + it.second)) PQ.emplace(Distance[v], v);",
+					"\t\t\t/* もしくは",
+					"\t\t\tif(!has_been_added[v] && Distance[u] + it.second < Distance[v]){",
+						"\t\t\t\tDistance[v] = Distance[u] + it.second;",
+						"\t\t\t\tPQ.emplace(Distance[v], v);",
+					"\t\t\t}",
+					"\t\t\t*/",
+				"\t\t}",
+			"\t}",
+		"}"
+		]
+	},
+	
+	"Tree DP": {
+		"scope": "cpp",
+		"prefix": "treedp",
+		"body":[
+			"bool has_been_discovered[N], has_been_exited[N];",
+			"memset(has_been_discovered, 0, sizeof has_been_discovered);",
+			"memset(has_been_exited, 0, sizeof has_been_exited);",
+			"stack<int> stk;",
+			"stk.push(0);",
+			"while(!stk.empty()){",
+				"\tint u = stk.top(); stk.pop();",
+				"\tif(has_been_discovered[u]){",
+					"\t\tfor(auto i : adj[u]){",
+						"\t\t\tif(has_been_exited[i]){",
+							"\t\t\t\t//現在注目している頂点の親はdpの更新式に入れない",
+							"\t\t\t\t//dpの更新式",
+						"\t\t\t}",
+					"\t\t}",
+					"\t\thas_been_exited[u] = true;",
+				"\t}else{",
+					"\t\thas_been_discovered[u] = true;",
+					"\t\tstk.push(u);",
+					"\t\tfor (auto i : adj[u]){",
+						"\t\t\tif(!has_been_discovered[i]){",
+							"\t\t\t\tstk.push(i);",
+						"\t\t\t}",
+					"\t\t}",
+				"\t}",
+			"}"
+		]
+	},
+	
+	"Make chmax": {
+		"scope": "cpp",
+		"prefix": "makechmax",
+		"body":[
+			"template<class T> inline bool chmax(T& a, T b) { if (a < b) { a = b; return 1; } return 0; }"
+		],
+	},
+	
+	"Make chmin": {
+		"scope": "cpp",
+		"prefix": "makechmin",
+		"body":[
+			"template<class T> inline bool chmin(T& a, T b) { if (a > b) { a = b; return 1; } return 0; }"
+		],
+	},
+	
+	"Multiple test cases": {
+		"scope": "cpp",
+		"prefix": "multest",
+		"body":[
+			"int total_testcases;",
+			"scanf(\"%d\", &total_testcases);",
+			"for (int testcase_i = 1; testcase_i <= total_testcases; ++testcase_i){",
+				"\t$0",
+			"}"
+		],
+	},
+	
+	"Make factorial": {
+		"scope": "cpp",
+		"prefix": "makefact",
+		"body":[
+			"Mint fact[N+1];",
+			"fact[0] = Mint::raw(1);",
+			"for (int i = 1; i <= N; ++i) fact[i] = fact[i-1]*Mint::raw(i);",
+			"Mint ifact[N+1];",
+			"ifact[N] = fact[N].inv();",
+			"for (int i = N; (i); --i) ifact[i-1] = ifact[i]*Mint::raw(i);"
+		],
+	},
+	
+	"Make rep macro": {
+		"scope": "cpp",
+		"prefix": "makerep",
+		"body":[
+			"#define rep(i, n) for (int i = 0; i < (int)(n); ++i)",
+			"#define rrep(i, n) for (int i = (int)(n)-1; i >= 0; --i)",
+			"#define rep2(i, a, b) for (int i = (int)a; i < (int)(b); ++i)",
+			"#define rrep2(i, a, b) for (int i = (int)(b)-1; i >= (int)(a); --i)"
+		],
+	},
+	
+	"Make Google Code Jam Case": {
+		"scope": "cpp",
+		"prefix": "makecase",
+		"body":[
+			"constexpr void Case(int i){ printf(\"Case #%d: \", i); }",
+			"constexpr void Case(int i){ cout << \"Case #\" << i << \": \";}"
+		],
+	},
+	
+	"Make Xor Bases": {
+		"scope": "cpp",
+		"prefix": "makexorbase",
+		"body":[
+			"vector<int> bases;",
+			"bool can_make(int n){",
+				"\tint now = n;",
+				"\tfor(auto base : bases)",
+					"\t\tnow = min(now, now ^ base);",
+				"\tif(now == 0)",
+					"\t\treturn true;",
+				"\telse{",
+					"\t\tbases.push_back(now);",
+					"\t\treturn false;",
+				"\t}",
+			"}"
+		],
+	},
+	
+	"KMP algorithm":{
+		"scope": "cpp",
+		"prefix":"makekmp",
+		"body":[
+			"int len_$1 = $1.length();",
+			"int mp[len_$1+1];//mp[i]:$1[0..k] = $1[i-k+1..i](k < i)となる最大のk。mp[i]の計算量は均しでO(1)、最悪O(N)。",
+			"int kmp[len_$1+1];//mpの計算のために使う。kmp[i]の計算量は均しでO(1)、最悪O(log N)。",
+			"mp[0] = -1;",
+			"kmp[0] = -1;",
+			"int _j = -1;",
+			"rep(i, len_$1){",
+				"\twhile (_j >= 0 && $1[i] != $1[_j]) _j = kmp[_j];",
+				"\t++_j;",
+				"\tmp[i+1] = _j;",
+				"\tkmp[i+1] = (i < len_$1-1 && $1[i+1] == $1[_j]) ? kmp[_j] : _j;",
+			"}",
+			"$0"
+		],
+	},
+	
+	"Make comparison operator":{
+		"scope": "cpp",
+		"prefix":"makeope",
+		"body":[
+			"bool operator<(const query &rhs) const { return number < rhs.number; }",
+		],
+	},
+	
+	"Add cin/cout faster":{
+		"scope": "cpp",
+		"prefix":"makecin",
+		"body":[
+    		"cin.tie(nullptr);",
+    		"std::ios_base::sync_with_stdio(false);",
+		],
+	}
+}
