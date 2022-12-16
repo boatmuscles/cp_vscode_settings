@@ -1,0 +1,16 @@
+{
+    "Make new snippet":{
+        "prefix": "snippet",
+        "scope": "code-snippets",
+        "body": [
+            ",\n",
+            "\"$1\":{",
+            "\t\"scope\":\"$2\",",
+            "\t\"prefix\":\"$3\",",
+            "\t\"body\":[",
+            "\t\t\"$4\",",
+            "\t],",
+            "}"
+        ]
+    }
+}
